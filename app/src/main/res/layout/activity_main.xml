@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="crudcomclasse.app.crys.crudcomclasse.MainActivity">
+
+    <TextView
+        android:id="@+id/projeto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="Projeto Crud Completo" />
+
+    <Button
+        android:id="@+id/btnCriarContato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/projeto"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Adicionar" />
+
+    <TextView
+        android:id="@+id/ContatdorContatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="53dp"
+        android:text="Total de Registros"
+        android:layout_below="@+id/btnCriarContato"
+        android:layout_centerHorizontal="true" />
+    <ScrollView
+        android:id="@+id/scrollViewContatos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ContatdorContatos"
+        android:layout_margin="30dp"
+        android:background="#BBDEFB">
+        <LinearLayout
+            android:id="@+id/objetosContatos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
